@@ -6,6 +6,7 @@ function adicionarValor(array) {
     const openModal = document.querySelector(".button-register")
     const closeModal = [...document.querySelectorAll(".close")]
 
+    let form         = document.querySelector("#form-financer")
     let valueMoney   = document.querySelector("#value")
     let valueType    = [...document.querySelectorAll(".buttons-value")]
     let buttonSubmit = document.querySelector(".insert-value")
@@ -42,12 +43,19 @@ function adicionarValor(array) {
     });
     
 
-    buttonSubmit.addEventListener("click", (event) => {
+    form.addEventListener("submit", (event) => {
+
+        if(typeof +valueMoney.value != "number"){
+            valueMoney.value = ""
+        }
+
         let registerValue = {
             id: listIds.length,
             value: parseFloat(valueMoney.value),
             categoryID: category
         }
+
+        console.log(valueMoney.value)
 
         listIds.push(registerValue)
         array.push(registerValue)
@@ -55,6 +63,8 @@ function adicionarValor(array) {
         valueType.forEach(element => {
             element.classList.remove("button-chosen")
         });
+
+        modal.classList.remove("flex")
 
         renderizarLista(insertedValues)
         event.preventDefault()
