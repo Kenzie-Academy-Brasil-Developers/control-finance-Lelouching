@@ -2,7 +2,7 @@
 
 //só queria um feedback se possível de como faria para atualizar a aba entradas ou saídas na linha 58 sem precisar apertar nelas novamente ou em todos quando eu clicar para excluir tal item
 
-//também quero perguntar sobre o margin: 0 auto;, mas esse eu prefiro que pelo menos seja em call
+//também quero perguntar sobre o margin: 0 auto;, mas esse eu prefiro que pelo menos seja em call e também sobre o index.html no github
 
 let listIds = insertedValues.map((data) => data)
 
@@ -47,7 +47,7 @@ function renderizarLista(array) {
         divTrash.id = element.id
         imageTrash.id = element.id
 
-        imageTrash.src = "../../assets/trash.png"
+        imageTrash.src = "./assets/trash.png"
         imageTrash.alt = "Lixeira para excluir"
 
         ul.appendChild(li)
