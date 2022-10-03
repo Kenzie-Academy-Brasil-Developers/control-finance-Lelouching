@@ -1,0 +1,46 @@
+.button-register{
+    background-color: var(--color-brand-1);
+    color: var(--color-mode);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+    border: none;
+    border-radius: var(--radius-1);
+    width: 100%;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.button-register:hover{
+    background-color: var(--color-brand-2);
+}
+
+.button-financer{
+    color: var(--color-grey-2);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+    border: 0.0938rem solid var(--color-grey-5);
+    background-color: var(--color-mode);
+    border-radius: var(--radius-1);
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.button-financer:hover{
+    background-color: var(--color-brand-3);
+    color: var(--color-brand-1);
+    border: 0.0938rem solid var(--color-brand-1);
+}
+
+.type-financer{
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-2);
+    color: var(--color-grey-2);
+    background-color: var(--color-grey-4);
+    border-radius: var(--radius-2);
+    padding: 0.4375rem 0.875rem;
+    border: none;
+}
+
+.type-financer:hover{
+    background-color: var(--color-grey-5);
+}

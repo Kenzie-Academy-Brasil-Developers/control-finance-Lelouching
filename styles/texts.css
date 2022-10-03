@@ -1,0 +1,17 @@
+.site-logo{
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-1);
+}
+
+.financer-summary{
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-2);
+    color: var(--color-grey-1);
+}
+
+.texts-value{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-2);
+    color: var(--color-grey-1);
+}

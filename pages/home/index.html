@@ -7,13 +7,68 @@
     <title>Control Finance</title>
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <meta name="description" content="Control Finance - Seu controle financeiro">
-    <link rel="stylesheet" href="/styles/globalStyles.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/buttons.css">
+    <link rel="stylesheet" href="../../styles/modal.css">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/flex.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
-<body>
-    <main id="app"></main>
-    <script src="/scripts/modal.js"></script>
+<body class="">
+
+    <header class="header-container container flex">
+            <div class="div-header container flex">
+                <h1 class="site-logo">
+                    <a href="#" class="anchor-style-none"><span class="brand-color-1">Control</span> Finance</a>
+                </h1>
+                <button class="button-register">Registrar novo valor</button>
+            </div>
+    </header>
+
+    <main id="app" class="container">
+        <div class="div-financer flex">
+            <h2 class="financer-summary">Resumo financeiro</h2>
+            <div class="div-buttons-financer flex">
+                <button class="button-financer">Todos</button>
+                <button class="button-financer">Entradas</button>
+                <button class="button-financer">Saídas</button>
+            </div>
+        </div>
+        <div class="div-values flex">
+            <span class="texts-value">Soma dos valores</span>
+            <span class="sum-value texts-value"></span>
+        </div>
+        <ul class="lists-financer flex flex-column"></ul>
+        <div class="modal-black justify-center">
+            <section class="modal flex flex-column">
+                <h2 class="register-value">Registro valor</h2>
+                <button class="button-close close">X</button>
+                <span class="modal-text">Digite o valor e em seguida aperte o botão referente ao tipo do valor</span>
+                <form action="">
+                    <label for="value" class="label-value">Valor</label>
+                    <div class="div-input-value flex align-i-center">
+                        <span class="money-sign">R$</span>
+                        <input type="number" id="value" placeholder="00.00" required>
+                    </div>
+                    <div class="div-values-type flex">
+                        <span class="value-type">Tipo de valor</span>
+                        <div class="div-buttons-value flex">
+                            <button class="buttons-value">Entrada</button>
+                            <button class="buttons-value">Saída</button>
+                        </div>
+                    </div>
+                    <div class="div-submit flex align-i-center">
+                        <button class="button-cancel close">Cancelar</button>
+                        <button type="submit" class="insert-value">Inserir valor</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    
     <script src="valuesData.js"></script>
     <script src="index.js"></script>
+    <script src="/scripts/modal.js"></script>
+
 </body>
 </html>

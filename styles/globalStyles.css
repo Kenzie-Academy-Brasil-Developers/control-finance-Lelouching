@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 :root {
@@ -46,13 +47,101 @@ body {
 }
 
 .container {
-  max-width: 43rem;
+  width: 43rem;
+  max-width: 100%;
   margin: 0 auto;
+}
+
+.anchor-style-none{
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 700px) {
   .container {
-    max-width: 43rem;
-    margin: 0 1rem;
+    width: 43rem;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .div-header{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .div-financer{
+    flex-direction: column;
+    height: 10rem;
+    justify-content: space-around;
+  }
+
+  .div-buttons-financer{
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .modal{
+    width: 95%;
+  }
+
+  .div-values-type{
+    flex-direction: column;
+  }
+
+  .div-buttons-value{
+    flex-direction: column;
+  }
+
+  .buttons-value{
+    width: 100%;
+  }
+
+  .div-submit{
+    justify-content: space-between;
+  }
+
+  .button-cancel{
+    width: 48%;
+  }
+
+  .insert-value{
+    width: 48%;
+  }
+}
+
+@media (min-width:701px) {
+  .header-container{
+    margin-bottom: 6rem;
+    width: 100%;
+  }
+
+  .div-header{
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .button-register{
+    max-width: 11rem;
+  }
+
+  .div-financer{
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+
+  .div-values-type{
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .buttons-value{
+    width: 5rem;
+    max-width: 100%;
+  }
+
+  .div-submit{
+    justify-content: flex-end;
+    gap: 1rem;
   }
 }

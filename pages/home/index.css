@@ -1,1 +1,54 @@
 /* Desenvolva a estilização da sua página aqui */
+
+.header-container{
+    background-color: var(--color-grey-5);
+    height: 10rem;
+}
+
+.div-buttons-financer{
+    gap: 1rem;
+}
+
+.div-values{
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--color-grey-5);
+    border: 0.0938rem solid var(--color-grey-4);
+    border-radius: var(--radius-1);
+    padding: 1rem;
+}
+
+.lists-financer{
+    margin-top: 3rem;
+    max-width: 100%;
+    gap: 2rem;
+}
+
+.list-financer{
+    background-color: var(--color-mode);
+    border: 0.0938rem solid var(--color-grey-5);
+    border-radius: var(--radius-1);
+    padding: 1rem 2rem 1rem 1rem;
+    width: 100%;
+}
+
+.div-list{
+    gap: 4rem;
+}
+
+.div-trash{
+    border: 00.0938rem solid var(--color-grey-5);
+    padding: 0.125rem 0.25rem;
+    border-radius: var(--radius-2);
+    background-color: var(--color-mode);
+    cursor: pointer;
+}
+
+.div-trash:hover{
+    background-color: var(--color-grey-5);
+}
+
+.trash{
+    width: 0.75rem;
+    height: 0.875rem;
+}

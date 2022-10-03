@@ -1,0 +1,162 @@
+.modal-black{
+    background-color: var(--color-grey-1-opacity-5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    padding-top: 5rem;
+    display: none;
+}
+
+.modal{
+    background-color: var(--color-mode);
+    border-radius: var(--radius-1);
+    position: relative;
+    height: fit-content;
+    padding: 1.5rem;
+    gap: 1.5625rem;
+    animation: modalAnimation var(--animation-duration) var(--animation-type);;
+}
+
+.register-value{
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-2);
+    color: var(--color-grey-1);
+}
+
+.button-close{
+    font-family: var(--font-family-2);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-2);
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    padding: 0.25rem 0.75rem;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--radius-2);
+    background-color: var(--color-grey-5);
+}
+
+.button-close:hover{
+    background-color: var(--color-grey-4);
+}
+
+.modal-text{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-3);
+    color: var(--color-grey-2);
+    line-height: var(--line-height-1);
+}
+
+.label-value{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-2);
+    color: var(--color-grey-1);
+}
+
+.div-input-value{
+    background-color: var(--color-mode);
+    border: 0.0938rem solid var(--color-grey-3);
+    border-radius: var(--radius-1);
+    padding: 0.75rem 1rem;
+    width: 100%;
+    gap: 1rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.money-sign{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-2);
+    color: var(--color-grey-2);
+}
+
+#value{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+#value::placeholder{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-3);
+    color: var(--color-grey-2);
+}
+
+.value-type{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-2);
+    color: var(--color-grey-1);
+}
+
+.div-buttons-value{
+    gap: 1rem;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.buttons-value{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-2);
+    background-color: var(--color-mode);
+    border: 0.0938rem solid var(--color-grey-5);
+    border-radius: var(--radius-1);
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.buttons-value:hover{
+    background-color: var(--color-brand-3);
+    color: var(--color-brand-1);
+    border: 0.0938rem solid var(--color-brand-1);
+}
+
+.button-chosen{
+    background-color: var(--color-brand-3);
+    color: var(--color-brand-1);
+    border: 0.0938rem solid var(--color-brand-1);
+}
+
+.button-cancel{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-2);
+    border: none;
+    border-radius: var(--radius-1);
+    padding: 0.4375rem 0.875rem;
+    background-color: var(--color-grey-4);
+    cursor: pointer;
+}
+
+.button-cancel:hover{
+    background-color: var(--color-grey-5);
+}
+
+.insert-value{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+    color: var(--color-mode);
+    padding: 0.4375rem 0.875rem;
+    background-color: var(--color-brand-1);
+    border-radius: var(--radius-1);
+    border: none;
+    cursor: pointer;
+}
+
+.insert-value:hover{
+    background-color: var(--color-brand-2);
+}
+
+@keyframes modalAnimation {
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
