@@ -42,7 +42,7 @@ function adicionarValor(array) {
     });
     
 
-    buttonSubmit.addEventListener("click", () => {
+    buttonSubmit.addEventListener("click", (event) => {
         let registerValue = {
             id: listIds.length,
             value: parseFloat(valueMoney.value),
@@ -51,11 +51,13 @@ function adicionarValor(array) {
 
         listIds.push(registerValue)
         array.push(registerValue)
-        renderizarLista(insertedValues)
 
         valueType.forEach(element => {
             element.classList.remove("button-chosen")
         });
+
+        renderizarLista(insertedValues)
+        event.preventDefault()
     })
 }
 
